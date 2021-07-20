@@ -4,7 +4,7 @@ This is the Python code for testing Dune adapter boards. Additional requirements
 ## Additional Requirements 
 There are three additional hardware requirements for running this code. First is a Raspberry Pi. During the writing of the code, a Raspberry Pi 3 model B V 1.2 was used. This is an important detail because if a different model is used then the numbering of the pins are not guarateed to be the same. The second requirement is a custom test board. The layout for the test board is included in the repoistory under the name Dune Test Jig PCB Layout Final.pdf. The obvious third requirement would be the Dune adapter board that is being tested, which is plugged into the test board. 
 ### Reading the Test Board Layout 
-The test board mainly consists of a Raspberry Pi and seven additional MCP23017 I/O expanders each with their own hex address and set number of pins. The Pi is labeled as J1 while each of the expanders are labeled U1-U8 (they are not placed on the board in numerical order). 
+The test board mainly consists of a Raspberry Pi header and seven additional MCP23017 I/O expanders each with their own hex address and set number of pins. The Pi header is labeled as J1 while each of the expanders are labeled U1-U8 (they are not placed on the board in numerical order). 
 
 - U1 correcponds to the expander that is addressed as 0x20 and this uses pins 65-80. 
 - U2 corresponds to 0x21 and uses pins 81-96. 
@@ -18,6 +18,8 @@ The test board mainly consists of a Raspberry Pi and seven additional MCP23017 I
 These addresses and pin numbers are set up at the beginning of the code. 
 
 ## Method
+The goal of this code is to be able to test Dune adapter boards to ensure pins that should be connected are connected and pins that should not be connected are not. First, we must define the way in which both the Dune adapter board and the test board are being numbered. This is not a universal numbering system, this is simply how the boards were numbered in order to be referenced in this code. 
+
 
 ## Outputs 
 
