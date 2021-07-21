@@ -28,6 +28,8 @@ As mentioned previously, each expander has a corresponding address and set numbe
 ![mcp23017](https://user-images.githubusercontent.com/87721944/126425425-3c148019-5ee0-4a77-8128-35377a87cc8f.png)
 
 The numbering starts with GPA0 and goes numerically through GPB7. For example, for U1 which is addressed as 0x20, the pin corresponding to A0 would be numbered 65 in the code and the pin corresponding to B0 would be numbered 73. I/O pins which are used in the code are only able to be connected to GPA/B, so those are the only ones we need to worry about numbering. 
+### The Code
+The main idea of the code is that the pins on the J4 side of the test board will always be set as outputs while the pins on the J5 side of the test board will always be set as inputs. The middle row is all connected together as a ground line and there are four additional ground pins in the middle of each row on the adapter board, these become more obvious when looking at the adapter board. The pins on the J4 output side of the test board are pins 1-32 on the left side (from the perspective of looking at the layout) and pins 33-64 on the right side. 
 
 
 ## User Input
