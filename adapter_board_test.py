@@ -202,7 +202,7 @@ with open(adjacent_file, 'a') as f1:
         readoutrxb = pi.digitalRead(i2)
         if readoutrxb == 0:
             f1.write("Wiringpi Pin {} is Not Connected \n".format(i2))
-        elif readoutrxa == 1:
+        elif readoutrxb == 1:
             f1.write("Wiringpi Pin {} is Connected \n".format(i2))
     for i3 in list(range(180,193)): #skip 179
         pi.pinMode(i3,0)
