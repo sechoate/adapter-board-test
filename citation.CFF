@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Adaptor Board Test
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - family-names: Choate
+  - given-names: Sarah 
+repository-code: 'https://github.com/sechoate/adapter-board-test.git'
